@@ -3,8 +3,8 @@ function getResponseFromAPI() {
     if (true) {
       resolve();
     } else {
-        reject();
-      }
+      reject();
+    }
   });
 }
 
