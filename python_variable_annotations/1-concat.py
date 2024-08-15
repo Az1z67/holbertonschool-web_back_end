@@ -3,8 +3,9 @@
 Annotating with str
 """
 
-def contact(str1: str, str2: str) -> str:
+
+def concat(str1: str, str2: str) -> str:
     """
-    Function concatenates two strings
+    Function concatenates strings
     """
     return "{}{}".format(str1, str2)
