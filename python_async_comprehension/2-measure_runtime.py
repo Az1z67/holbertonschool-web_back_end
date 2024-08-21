@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
-"""Async Comprehension"""
-
+"""
+Async Comprehension
+"""
 import asyncio
 import time
-async_generator = __import__('0-async_generator').async_generator
+async_comprehension = __import__('1-async_comprehension').async_comprehension
 
 
 async def measure_runtime() -> float:
     """
-    Measure Runtime
+    async comprehension
     """
-    start = time.time()
-    await asyncio.gather(*(async_comprehension() for i in range(4))) # type: ignore
-    end = time.time()
-    return end - start
+    start: float = time.time()
+    await asyncio.gather(*[async_comprehension() for i in range(4)])
+    return time.time() - start
