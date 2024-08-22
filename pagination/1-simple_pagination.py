@@ -6,6 +6,7 @@ from typing import Tuple, List
 import csv
 import math
 
+
 index_range = __import__('0-simple_helper_function').index_range
 
 
