@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 """Server class to paginate a database of popular baby names.
 """
+
+
 from typing import Tuple, List
 import csv
 import math
+
 
 index_range = __import__('0-simple_helper_function').index_range
 
