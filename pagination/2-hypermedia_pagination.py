@@ -41,12 +41,13 @@ class Server:
             return self.dataset()[s:e]
         except IndexError:
             return []
-        
-        def get_hyper(self, page: int = 1, page_size: int = 10) -> dict:
-            """Returning dictionary with info about page"""
-            data = self.get_page(page=page, page_size=page_size)
-            total_len = len(self.dataset())
-            total_pages = math.ceil(total_len / page_size)
+
+    def get_hyper(self, page: int = 1, page_size: int = 10) -> dict:
+        """Returning dictionary
+        """
+        data = self.get_page(page=page, page_size=page_size)
+        total_len = len(self.dataset())
+        total_pages = math.ceil(total_len / page_size)
 
         return {
             "page_size": len(data),
@@ -60,6 +61,6 @@ class Server:
 
 def index_range(page: int, page_size: int) -> Tuple[int, int]:
     """
-    index_range
+    Return a tuple of size
     """
     return ((page - 1) * page_size, page * page_size)
