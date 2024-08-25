@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """
-All Docs
+List Docs int the Collection
 """
 import pymongo
 
 
 def list_all(mongo_collection):
     """
-    All Docs
+    List Docs
     """
     if not mongo_collection:
         return []
