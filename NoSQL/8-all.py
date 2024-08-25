@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
-"""
-List Docs int the Collection
-"""
+""" List documents """
 import pymongo
 
 
-def list_all(mongo_collection):
+def list_all(mongo_collection) -> list:
+    """ List documents
     """
-    List Docs
-    """
-    if not mongo_collection:
-        return []
-    return list(mongo_collection.find())
+    documents: list = []
+
+    for document in mongo_collection.find():
+        documents.append(document)
+
+    return documents
